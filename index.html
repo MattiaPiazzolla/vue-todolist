@@ -22,7 +22,23 @@
                      <div class="todo-list bg-black p-3 rounded-2">
                          <ul class="text-white list-unstyled">
                             <!-- AGGIUNGO DEFINISCO LE TASK -->
-                             <li class="rounded-2">
+                             <!-- AGGIUNGO IL V-FOR PER CICLARE GLI OGGETTI DELL'ARRAY -->
+                             <li v-for="(task, index) in todolist" class="rounded-2">
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <div class="listText">
+                                        TASK X
+                                    </div>
+                                    <div class="listBtn">
+                                        <button class="btn btn-sm btn-square btn-success me-2">
+                                            <i class="fas fas fa-check"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-square btn-danger">                                    
+                                            <i class="fas fas fa-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                             </li>
+                             <!-- <li class="rounded-2">
                                 <div class="d-flex justify-content-between align-content-center">
                                     <div class="listText">
                                         TASK X
@@ -111,22 +127,7 @@
                                         </button>
                                     </div>
                                 </div>
-                             </li>
-                             <li class="rounded-2">
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <div class="listText">
-                                        TASK X
-                                    </div>
-                                    <div class="listBtn">
-                                        <button class="btn btn-sm btn-square btn-success me-2">
-                                            <i class="fas fas fa-check"></i>
-                                        </button>
-                                        <button class="btn btn-sm btn-square btn-danger">                                    
-                                            <i class="fas fas fa-x"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                             </li>
+                             </li> -->
                          </ul>
                          <!-- INPUT -->
                           <div class="d-flex mb-3 mt-5">
