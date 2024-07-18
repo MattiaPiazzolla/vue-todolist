@@ -25,20 +25,26 @@
                              <!-- AGGIUNGO IL V-FOR PER CICLARE GLI OGGETTI DELL'ARRAY -->
                               <!-- FACCIO IL BINDING DELLA CLASSE E VERIFICO SE IL VALORE DI DONE È VERO O FALSO E DI CONSEGUENZA AGGIUNGO LA CLASSE PER SBARRARE LA TASK -->
                              <li v-for="(task, index) in todolist" class="rounded-2" :class="task.done == true ? 'text-decoration-line-through' : '' ">
-                                <div class="d-flex justify-content-between align-content-center">
-                                    <div class="listText">
-                                        <!-- INSERISCO IL VALORE TESTO DELLE TASK -->
-                                         {{ task.text }}
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="listText">
+                                            <!-- INSERISCO IL VALORE TESTO DELLE TASK -->
+                                             {{ task.text }}
+                                        </div>
                                     </div>
-                                    <div class="listBtn">
-                                        <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO CHECKDONE -->
-                                        <button class="btn btn-sm btn-square me-2" :class="task.done == true ? 'btn-secondary' : 'btn-success' " @click="checkDone(index)">
-                                            <i class="fas fas fa-check"></i>
-                                        </button>
-                                        <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO DELETE TASK -->
-                                        <button class="btn btn-sm btn-square btn-danger"@click="deleteTask(index)">                                    
-                                            <i class="fas fas fa-x"></i>
-                                        </button>
+                                    <div class="col-3">
+                                        <div class="d-flex  justify-content-end">
+                                            <div class="listBtn">
+                                                <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO CHECKDONE -->
+                                                <button class="btn btn-sm btn-square me-2" :class="task.done == true ? 'btn-secondary' : 'btn-success' " @click="checkDone(index)">
+                                                    <i class="fas fas fa-check"></i>
+                                                </button>
+                                                <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO DELETE TASK -->
+                                                <button class="btn btn-sm btn-square btn-danger"@click="deleteTask(index)">                                    
+                                                    <i class="fas fas fa-x"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                              </li>
