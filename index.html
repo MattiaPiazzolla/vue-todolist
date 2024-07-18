@@ -136,7 +136,7 @@
                          <!-- INPUT -->
                           <div class="d-flex mb-3 mt-5">
                             <!-- COLLEGO L'INPUT DEL TESTO CON LA VARIABILE NEWTASK -->
-                            <input type="text" class="form-control p-1 me-2" placeholder="Nuovo task" v-model="newTask">
+                            <input type="text" class="form-control p-1 me-2" placeholder="Nuovo task" v-model="newTask" @keydown.enter="addNewTask">
                             <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO ADDNEWTASK -->
                             <button class="btn btn-light" @click="addNewTask">Aggiungi</button>
                           </div>
