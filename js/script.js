@@ -57,6 +57,8 @@ createApp({
         },
         // DEFINISCO IL METODO ADDNEWTASK
         addNewTask(){
+            // PUSHO IL VALORE DI NEWTASK NELLA TODOLIST 
+            this.todolist.push(newTask);
             
         }
         
