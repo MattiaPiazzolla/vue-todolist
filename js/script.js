@@ -50,7 +50,8 @@ createApp({
         },
         // DEFINISCO IL METODO DELETE TASK
         deleteTask(index){
-
+            // VADO A PRENDERE L'ELEMENTO CHE DEVO ELIMINARE E GLI APPLICO SPLICE
+            this.todolist.splice(index, 1);
         }
         
     },
