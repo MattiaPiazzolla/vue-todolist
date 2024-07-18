@@ -5,6 +5,8 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            // DEFINISCO UN VARIABILE, NELLA QUALE ANDRO A PUSHARE IL VALORE INSERITO CON IMPUT
+            newTask: null,
             // DEFINISCO L'ARRAY DI OGGETTI
             todolist : [
                 {
