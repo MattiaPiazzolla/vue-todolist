@@ -31,7 +31,8 @@
                                          {{ task.text }}
                                     </div>
                                     <div class="listBtn">
-                                        <button class="btn btn-sm btn-square btn-success me-2">
+                                        <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO CHECKDONE -->
+                                        <button class="btn btn-sm btn-square me-2" :class="task.done == true ? 'btn-secondary' : 'btn-success' " @click="checkDone(index)">
                                             <i class="fas fas fa-check"></i>
                                         </button>
                                         <button class="btn btn-sm btn-square btn-danger">                                    

@@ -40,6 +40,14 @@ createApp({
         }
     },
     methods: {
+        // AGGIUNGO IL METODO CHE INVERTE IL VALORE DI DONE AL CLICK 
+        checkDone(index){
+            if (this.todolist[index].done) {
+                this.todolist[index].done = false;
+            } else {
+                this.todolist[index].done = true;
+            }
+        },
         
     },
 }).mount('#app');
