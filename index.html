@@ -24,7 +24,10 @@
                             <!-- AGGIUNGO DEFINISCO LE TASK -->
                              <!-- AGGIUNGO IL V-FOR PER CICLARE GLI OGGETTI DELL'ARRAY -->
                               <!-- FACCIO IL BINDING DELLA CLASSE E VERIFICO SE IL VALORE DI DONE È VERO O FALSO E DI CONSEGUENZA AGGIUNGO LA CLASSE PER SBARRARE LA TASK -->
-                             <li v-for="(task, index) in todolist" class="rounded-2" :class="task.done == true ? 'text-decoration-line-through' : '' ">
+                             <li v-for="(task, index) in todolist" class="rounded-2" :class="[
+                             task.done ? 'text-decoration-line-through' : '',
+                             task.done ? 'bg-success' : ''
+                         ]">
                                 <div class="row">
                                     <div class="col-9">
                                         <div class="listText">
