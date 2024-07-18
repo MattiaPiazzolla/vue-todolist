@@ -52,6 +52,10 @@ createApp({
         deleteTask(index){
             // VADO A PRENDERE L'ELEMENTO CHE DEVO ELIMINARE E GLI APPLICO SPLICE
             this.todolist.splice(index, 1);
+        },
+        // DEFINISCO IL METODO ADDNEWTASK
+        addNewTask(){
+            
         }
         
     },
