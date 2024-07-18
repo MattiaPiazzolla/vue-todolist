@@ -30,3 +30,16 @@ const todolist = [
     },
     
 ]
+// CREO L'SPA VUE
+const { createApp } = Vue;
+
+createApp({
+    data(){
+        return{
+
+        }
+    },
+    methods: {
+        
+    },
+}).mount('#app');
