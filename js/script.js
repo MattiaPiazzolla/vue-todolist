@@ -48,6 +48,10 @@ createApp({
                 this.todolist[index].done = true;
             }
         },
+        // DEFINISCO IL METODO DELETE TASK
+        deleteTask(index){
+
+        }
         
     },
 }).mount('#app');

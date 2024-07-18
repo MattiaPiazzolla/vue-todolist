@@ -35,7 +35,8 @@
                                         <button class="btn btn-sm btn-square me-2" :class="task.done == true ? 'btn-secondary' : 'btn-success' " @click="checkDone(index)">
                                             <i class="fas fas fa-check"></i>
                                         </button>
-                                        <button class="btn btn-sm btn-square btn-danger">                                    
+                                        <!-- AGGIUNGO IL CLICK CHE CHIAMA IL METODO DELETE TASK -->
+                                        <button class="btn btn-sm btn-square btn-danger"@click="deleteTask(index)">                                    
                                             <i class="fas fas fa-x"></i>
                                         </button>
                                     </div>
