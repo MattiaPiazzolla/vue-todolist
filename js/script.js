@@ -58,8 +58,9 @@ createApp({
         // DEFINISCO IL METODO ADDNEWTASK
         addNewTask(){
             // PUSHO IL VALORE DI NEWTASK NELLA TODOLIST 
-            this.todolist.push(newTask);
-            
+            this.todolist.push({text:this.newTask, done:false});
+            // RESETTO IL CAMPO TESTO UNA VOLTA INSERITA LA NUOVA TASK
+            this.newTask = null;
         }
         
     },
